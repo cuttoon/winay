@@ -1,0 +1,2 @@
+export const money = (n) => `S/ ${Number(n).toLocaleString('es-PE', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+export const percent = (n) => `${Number(n).toLocaleString('es-PE', { maximumFractionDigits: 1 })}%`;

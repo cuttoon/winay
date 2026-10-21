@@ -1,0 +1,210 @@
+[
+  {
+    "id": "rule-50-30-20",
+    "title": "La regla 50/30/20 paso a paso",
+    "summary": "Un punto de partida simple para repartir tu ingreso: 50% necesidades, 30% gustos y 20% ahorro o pago de deudas.",
+    "type": "guide",
+    "level": "beginner",
+    "tags": ["budget", "basics", "saving"],
+    "steps": [
+      "Suma lo que realmente recibes al mes, después de descuentos.",
+      "Separa primero el 20% para ahorro o deudas, apenas cobres.",
+      "Cubre tus necesidades (vivienda, comida, transporte, servicios, estudios) con hasta el 50%.",
+      "Lo que quede, hasta el 30%, es para tus gustos. Ajusta los porcentajes a tu realidad, lo importante es tener un plan."
+    ],
+    "source": { "name": "Wiñay", "url": null }
+  },
+  {
+    "id": "tracking-habit",
+    "title": "Registra tus gastos durante 30 días",
+    "summary": "No puedes mejorar lo que no mides. Un registro simple durante un mes te muestra a dónde se va tu dinero.",
+    "type": "guide",
+    "level": "beginner",
+    "tags": ["budget", "basics"],
+    "steps": [
+      "Anota cada gasto el mismo día, con comercio y monto (por ejemplo \"Wong 85\").",
+      "Los domingos, súmalos por categoría.",
+      "Al final del mes, identifica las dos categorías que más te sorprendieron.",
+      "Elige un solo hábito para cambiar el mes siguiente."
+    ],
+    "source": { "name": "Wiñay", "url": null }
+  },
+  {
+    "id": "emergency-fund",
+    "title": "Tu fondo de emergencia en 3 pasos",
+    "summary": "Un colchón para imprevistos evita que una urgencia termine en deuda. La referencia común es de 3 a 6 meses de gastos básicos.",
+    "type": "guide",
+    "level": "beginner",
+    "tags": ["emergency-fund", "saving"],
+    "steps": [
+      "Calcula tus gastos básicos mensuales (vivienda, comida, transporte, servicios).",
+      "Fija como primera meta 1 mes y luego sube hasta 3 o 6 meses.",
+      "Guárdalo en una cuenta separada de la que usas a diario y automatiza el aporte."
+    ],
+    "source": { "name": "Wiñay", "url": null }
+  },
+  {
+    "id": "micro-spending",
+    "title": "Gastos hormiga: cómo detectarlos",
+    "summary": "Compras pequeñas y frecuentes que parecen inofensivas pero suman bastante al cabo del mes.",
+    "type": "guide",
+    "level": "beginner",
+    "tags": ["micro-spending", "budget"],
+    "steps": [
+      "Filtra tus gastos de menos de S/ 20 y súmalos.",
+      "Multiplica ese total por 12 para ver su efecto anual.",
+      "Elige uno solo para reducir esta semana, sin eliminar todos de golpe."
+    ],
+    "source": { "name": "Wiñay", "url": null }
+  },
+  {
+    "id": "delivery-habits",
+    "title": "Menos delivery, más ahorro",
+    "summary": "El delivery suma comisiones, envío y propina. Planificar tus comidas reduce el gasto sin dejar de comer bien.",
+    "type": "guide",
+    "level": "beginner",
+    "tags": ["food", "budget"],
+    "steps": [
+      "Cuenta cuántos pedidos hiciste el último mes y cuánto gastaste en total.",
+      "Define un máximo semanal de pedidos.",
+      "Cocina en lote para 2 o 3 almuerzos y llévalos contigo."
+    ],
+    "source": { "name": "Wiñay", "url": null }
+  },
+  {
+    "id": "subscriptions-audit",
+    "title": "Auditoría de suscripciones en 10 minutos",
+    "summary": "Revisa qué servicios recurrentes pagas y cuáles realmente usas.",
+    "type": "guide",
+    "level": "beginner",
+    "tags": ["subscriptions", "budget"],
+    "steps": [
+      "Revisa el estado de cuenta de tu tarjeta y de tus billeteras digitales.",
+      "Lista cada suscripción con su costo mensual.",
+      "Cancela las que no usaste en 30 días; si las extrañas, las reactivas."
+    ],
+    "source": { "name": "Wiñay", "url": null }
+  },
+  {
+    "id": "fixed-costs",
+    "title": "Reducir costos fijos sin bajar tu calidad de vida",
+    "summary": "Los gastos fijos pesan cada mes. Pequeñas negociaciones y comparaciones liberan margen para ahorrar.",
+    "type": "guide",
+    "level": "intermediate",
+    "tags": ["fixed-costs", "budget"],
+    "steps": [
+      "Lista tus gastos fijos: alquiler, internet, telefonía, transporte, estudios.",
+      "Compara planes equivalentes antes de renovar y consulta por promociones.",
+      "Si compartes vivienda o servicios, divide los costos por escrito."
+    ],
+    "source": { "name": "Wiñay", "url": null }
+  },
+  {
+    "id": "credit-card-basics",
+    "title": "Tarjeta de crédito: pago mínimo vs. pago total",
+    "summary": "Pagar solo el mínimo deja saldo con intereses. La TCEA resume el costo real porque incluye intereses, comisiones y seguros.",
+    "type": "guide",
+    "level": "beginner",
+    "tags": ["credit", "debt"],
+    "steps": [
+      "Revisa la fecha de cierre y la fecha de pago de tu tarjeta.",
+      "Siempre que puedas, paga el total para no generar intereses.",
+      "Compara productos usando la TCEA, no solo la cuota mensual."
+    ],
+    "source": { "name": "Wiñay", "url": null }
+  },
+  {
+    "id": "debt-payoff",
+    "title": "Cómo ordenar tus deudas: bola de nieve vs. avalancha",
+    "summary": "Dos métodos para salir de deudas: pagar primero la más pequeña (motivación) o la más cara (menos intereses).",
+    "type": "guide",
+    "level": "intermediate",
+    "tags": ["debt", "credit"],
+    "steps": [
+      "Lista cada deuda con saldo, tasa y cuota mínima.",
+      "Paga el mínimo en todas y destina el extra a una sola.",
+      "Bola de nieve: la de menor saldo. Avalancha: la de mayor tasa.",
+      "Al terminar una, suma su cuota a la siguiente."
+    ],
+    "source": { "name": "Wiñay", "url": null }
+  },
+  {
+    "id": "compound-interest",
+    "title": "Interés compuesto: por qué conviene empezar temprano",
+    "summary": "Los intereses también generan intereses. Empezar joven, aunque sea con montos pequeños, hace una gran diferencia.",
+    "type": "guide",
+    "level": "beginner",
+    "tags": ["saving", "investing", "basics"],
+    "steps": [
+      "Prueba el simulador de esta app con un aporte pequeño y plazos de 12, 36 y 60 meses.",
+      "Compara cuánto del total son tus aportes y cuánto es interés.",
+      "Define un aporte mensual que puedas sostener sin sacrificar tus necesidades."
+    ],
+    "source": { "name": "Wiñay", "url": null }
+  },
+  {
+    "id": "digital-wallet-safety",
+    "title": "Yape, Plin y fraudes: cómo protegerte",
+    "summary": "Las estafas más comunes usan ingeniería social. Tus claves y códigos de verificación son personales.",
+    "type": "guide",
+    "level": "beginner",
+    "tags": ["safety", "fraud"],
+    "steps": [
+      "Nunca compartas códigos de verificación ni claves, aunque quien llame diga ser del banco.",
+      "Verifica nombre y número antes de enviar dinero.",
+      "Desconfía de ofertas urgentes o ganancias garantizadas.",
+      "Si sospechas de un fraude, comunícate directamente con tu entidad por sus canales oficiales."
+    ],
+    "source": { "name": "Wiñay", "url": null }
+  },
+  {
+    "id": "pensions-basics",
+    "title": "Pensiones: ONP, AFP y tu estado de cuenta",
+    "summary": "Desde tu primer empleo formal aportas a un sistema de pensiones. Conocer cuál es el tuyo te ayuda a planificar a largo plazo.",
+    "type": "guide",
+    "level": "intermediate",
+    "tags": ["pensions", "basics"],
+    "steps": [
+      "Averigua si perteneces a la ONP o a una AFP.",
+      "Revisa en tu boleta cuánto se descuenta cada mes.",
+      "Consulta tu estado de cuenta de aportes al menos una vez al año."
+    ],
+    "source": { "name": "Wiñay", "url": null }
+  },
+  {
+    "id": "sbs-learn-with-us",
+    "title": "SBS: Aprende con nosotros",
+    "summary": "Material de educación financiera publicado por la Superintendencia de Banca, Seguros y AFP.",
+    "type": "external",
+    "level": "beginner",
+    "tags": ["basics", "budget", "saving"],
+    "source": { "name": "SBS Perú", "url": "https://www.sbs.gob.pe/educacion-financiera/aprende-con-nosotros" }
+  },
+  {
+    "id": "sbs-users-portal",
+    "title": "SBS: información para usuarios del sistema financiero",
+    "summary": "Portal de la SBS con información para usuarios sobre productos y servicios financieros.",
+    "type": "external",
+    "level": "beginner",
+    "tags": ["credit", "debt", "safety", "basics"],
+    "source": { "name": "SBS Perú", "url": "https://www.sbs.gob.pe/usuarios/" }
+  },
+  {
+    "id": "sbs-deposits",
+    "title": "SBS: aprende sobre depósitos",
+    "summary": "Explicación de la SBS sobre depósitos de ahorro, útil para elegir dónde guardar tu fondo de emergencia.",
+    "type": "external",
+    "level": "beginner",
+    "tags": ["saving", "emergency-fund"],
+    "source": { "name": "SBS Perú", "url": "https://www.sbs.gob.pe/usuarios/informacion-financiera/depositos/aprende-sobre-depositos" }
+  },
+  {
+    "id": "sbs-authorized-entities",
+    "title": "SBS: entidades autorizadas a captar depósitos",
+    "summary": "Relación por región de las entidades autorizadas. Verifica siempre que tu entidad esté en la lista antes de ahorrar.",
+    "type": "external",
+    "level": "beginner",
+    "tags": ["safety", "saving", "fraud"],
+    "source": { "name": "SBS Perú", "url": "https://www.sbs.gob.pe/usuarios/informacion-financiera/relacion-de-entidades-autorizadas-a-captar-depositos-en-cada-region" }
+  }
+]

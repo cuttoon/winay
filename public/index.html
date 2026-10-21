@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wiñay · Tu plata, al toque</title>
+    <meta
+      name="description"
+      content="Wiñay te ayuda a entender tus gastos, recibir consejos según tus hábitos y simular tu ahorro. Educación financiera para jóvenes peruanos."
+    />
+    <meta name="theme-color" content="#05081c" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="/fonts/poppins-latin-700-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <script type="module" src="/js/main.js"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <a class="brand" href="/" aria-label="Wiñay, inicio">
+          <img class="brand-pig" src="/img/pig.svg" alt="" width="32" height="35">
+          <span class="brand-name">Wiñay</span>
+        </a>
+        <span class="topbar-tag"
+          >Educación financiera para jóvenes peruanos</span
+        >
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Azure Bootcamp · Proyecto final</p>
+          <h1>Tu plata, <span class="hl">al toque</span>.</h1>
+          <p class="lead">
+            Entiende a dónde se va tu dinero, recibe consejos según tus hábitos
+            y descubre cuánto puedes ahorrar.
+          </p>
+          <ul class="stickers">
+            <li>Sin registrarte</li>
+            <li>No guardamos tus datos</li>
+            <li>Consejos según tus hábitos</li>
+          </ul>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+               <img class="hero-pig" src="/img/pig.svg" alt="Chanchito de Wiñay">
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="tabs" role="tablist" aria-label="Secciones">
+        <button
+          class="tab"
+          role="tab"
+          id="tab-btn-spending"
+          aria-controls="tab-spending"
+          data-tab="spending"
+          aria-selected="true"
+        >
+          Mis gastos
+        </button>
+        <button
+          class="tab"
+          role="tab"
+          id="tab-btn-simulator"
+          aria-controls="tab-simulator"
+          data-tab="simulator"
+          aria-selected="false"
+          tabindex="-1"
+        >
+          Mi meta de ahorro
+        </button>
+        <button
+          class="tab"
+          role="tab"
+          id="tab-btn-library"
+          aria-controls="tab-library"
+          data-tab="library"
+          aria-selected="false"
+          tabindex="-1"
+        >
+          Biblioteca
+        </button>
+      </div>
+
+      <main>
+        <!-- SPENDING INSIGHTS -->
+        <section
+          id="tab-spending"
+          role="tabpanel"
+          aria-labelledby="tab-btn-spending"
+        >
+          <div class="panel">
+            <h2>¿A dónde se fue mi plata?</h2>
+            <p class="muted">
+              Agrega tus gastos del mes uno por uno o carga el ejemplo. Tus
+              datos se procesan al instante y <strong>no se guardan</strong>.
+            </p>
+            <form id="spending-form" class="stack" novalidate>
+              <label class="field">
+                <span>Ingreso mensual (S/)</span>
+                <input
+                  id="income"
+                  type="number"
+                  min="1"
+                  step="0.01"
+                  inputmode="decimal"
+                  placeholder="Ej. 3200"
+                  required
+                />
+              </label>
+
+              <fieldset class="expense-entry">
+                <legend>Agregar un gasto</legend>
+                <div class="expense-grid">
+                  <div class="field">
+                    <label for="expense-date">Fecha</label>
+                    <div class="date-wrap">
+                      <input
+                        id="expense-date"
+                        type="text"
+                        inputmode="numeric"
+                        maxlength="10"
+                        placeholder="dd-mm-aaaa"
+                        autocomplete="off"
+                      />
+                      <button
+                        type="button"
+                        class="icon-btn"
+                        id="expense-date-btn"
+                        aria-label="Abrir calendario"
+                      >
+                        📅
+                      </button>
+                      <input
+                        id="expense-date-picker"
+                        class="date-picker"
+                        type="date"
+                        tabindex="-1"
+                        aria-hidden="true"
+                      />
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label for="expense-description">Descripción</label>
+                    <input
+                      id="expense-description"
+                      type="text"
+                      list="description-options"
+                      maxlength="120"
+                      placeholder="Elige o escribe y presiona Enter"
+                      autocomplete="off"
+                    />
+                    <datalist id="description-options"></datalist>
+                  </div>
+                  <div class="field">
+                    <label for="expense-amount">Monto (S/)</label>
+                    <input
+                      id="expense-amount"
+                      type="number"
+                      min="0.01"
+                      step="0.01"
+                      inputmode="decimal"
+                      placeholder="Ej. 25"
+                    />
+                  </div>
+                  <button type="button" class="btn primary" id="add-expense">
+                    Agregar
+                  </button>
+                </div>
+                <p class="muted small">
+                  ¿No está en la lista? Escribe tu propia descripción (“Otro”) y
+                  presiona Enter: se agrega el gasto y la palabra queda guardada
+                  en este navegador para la próxima.
+                </p>
+              </fieldset>
+
+              <div class="expense-list-wrap">
+                <div class="row-head">
+                  <strong id="expense-count">Aún no agregas gastos</strong>
+                  <span id="expense-total"></span>
+                </div>
+                <ul
+                  id="expense-list"
+                  class="expense-list"
+                  aria-label="Gastos agregados"
+                ></ul>
+              </div>
+
+              <div class="actions">
+                <button type="submit" class="btn primary">
+                  Analizar mis gastos
+                </button>
+                <button type="button" class="btn" id="load-sample">
+                  Cargar ejemplo
+                </button>
+                <button type="button" class="btn" id="clear-expenses">
+                  Vaciar lista
+                </button>
+              </div>
+              <p id="spending-error" class="error" role="alert" hidden></p>
+            </form>
+          </div>
+          <div id="spending-result" aria-live="polite" hidden></div>
+        </section>
+
+        <!-- SAVINGS SIMULATOR -->
+        <section
+          id="tab-simulator"
+          role="tabpanel"
+          aria-labelledby="tab-btn-simulator"
+          hidden
+        >
+          <div class="panel alt">
+            <h2>Mi meta de ahorro</h2>
+            <p class="muted">
+              Calcula cuánto tendrías aportando una cantidad fija cada mes
+              (interés compuesto, con la tasa expresada como TEA).
+            </p>
+            <form id="simulator-form" class="grid-form" novalidate>
+              <label class="field"
+                ><span>Aporte mensual (S/)</span>
+                <input
+                  id="sim-contribution"
+                  type="number"
+                  min="1"
+                  step="1"
+                  value="200"
+                  required
+              /></label>
+              <label class="field"
+                ><span>Tasa anual – TEA (%)</span>
+                <input
+                  id="sim-rate"
+                  type="number"
+                  min="0"
+                  max="100"
+                  step="0.1"
+                  value="5"
+                  required
+              /></label>
+              <label class="field"
+                ><span>Plazo (meses)</span>
+                <input
+                  id="sim-months"
+                  type="number"
+                  min="1"
+                  max="600"
+                  step="1"
+                  value="24"
+                  required
+              /></label>
+              <label class="field"
+                ><span>Monto inicial (S/) · opcional</span>
+                <input
+                  id="sim-initial"
+                  type="number"
+                  min="0"
+                  step="1"
+                  value="0"
+              /></label>
+              <label class="field"
+                ><span>Meta (S/) · opcional</span>
+                <input
+                  id="sim-goal"
+                  type="number"
+                  min="1"
+                  step="1"
+                  placeholder="Ej. 5000"
+              /></label>
+              <div class="actions align-end">
+                <button type="submit" class="btn primary">Calcular</button>
+              </div>
+            </form>
+            <p id="simulator-error" class="error" role="alert" hidden></p>
+          </div>
+          <div id="simulator-result" aria-live="polite" hidden></div>
+        </section>
+
+        <!-- LIBRARY -->
+        <section
+          id="tab-library"
+          role="tabpanel"
+          aria-labelledby="tab-btn-library"
+          hidden
+        >
+          <div class="panel alt2">
+            <h2>Biblioteca de recursos</h2>
+            <p class="muted">
+              Guías breves y enlaces a fuentes oficiales. Filtra por tema.
+            </p>
+            <div
+              id="tag-filters"
+              class="chips"
+              role="group"
+              aria-label="Filtrar por tema"
+            ></div>
+            <p id="library-source" class="muted small"></p>
+          </div>
+          <div id="resource-list" class="cards"></div>
+          <p id="library-error" class="error" role="alert" hidden></p>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>
+          Herramienta educativa. Las simulaciones y consejos son referenciales y
+          no constituyen asesoría financiera.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

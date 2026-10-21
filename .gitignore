@@ -1,0 +1,6 @@
+node_modules/
+.env
+*.log
+release.zip
+.DS_Store
+.azure-env
